@@ -780,8 +780,10 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n**🎞️ Title :** `{name1}`\n**├── Extention :**  {CR} .mkv\n**├── Resolution :** [{res}]\n\n<blockquote><b>📚 Course :</b> {b_name}</blockquote>\n\n**🌟 Extracted By :** {CR}'
-                cc1 = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n**📁 Title :** `{name1}`\n**├── Extention :**  {CR} .pdf\n\n<blockquote><b>📚 Course :</b> {b_name}</blockquote>\n\n**🌟 Extracted By :** {CR}'
+                cc = f'**╭━━━━━━━━━━━╮**\n**💫 𝐕ɪᴅᴇⱺ 𝐈𝐃** : **{str(count).zfill(3)}**\n**╰━━━━━━━━━━━╯**\n**📁𝐓ɪᴛʟᴇ : {name1}** **({res}).mkv\n** \n<blockquote>**📚𝐂ⱺᴜʀꜱᴇ** : **{b_name}**\n\n**⚡Dⱺw𐓣𝗅ⱺ𝖺𝖽ed By** : **{CR}** </blockquote>'
+                cc1 = f'**╭━━━━━━━━━━╮**\n**💫 𝐅ɪʟᴇ 𝐈𝐃** : **{str(count).zfill(3)}**\n**╰━━━━━━━━━━╯**\n**📁𝐓ɪᴛʟᴇ : {name1}** **.pdf\n** \n<blockquote>**📚𝐂ⱺᴜʀꜱᴇ** : **{b_name}**\n\n**⚡Dⱺw𐓣𝗅ⱺ𝖺𝖽ed By** : **{CR}** </blockquote>'
+                #cc = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n**🎞️ Title :** `{name1}`\n**├── Extention :**  {CR} .mkv\n**├── Resolution :** [{res}]\n\n<blockquote><b>📚 Course :</b> {b_name}</blockquote>\n\n**🌟 Extracted By :** {CR}'
+                #cc1 = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n**📁 Title :** `{name1}`\n**├── Extention :**  {CR} .pdf\n\n<blockquote><b>📚 Course :</b> {b_name}</blockquote>\n\n**🌟 Extracted By :** {CR}'
                 cczip = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n**📁 Title :** `{name1}`\n**├── Extention :**  {CR} .zip\n\n<blockquote><b>📚 Course :</b> {b_name}</blockquote>\n\n**🌟 Extracted By :** {CR}'
                 ccimg = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n**🖼️ Title :** `{name1}`\n**├── Extention :**  {CR} .jpg\n\n<blockquote><b>📚 Course :</b> {b_name}</blockquote>\n\n**🌟 Extracted By :** {CR}'
                 ccm = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n**🎵 Title :** `{name1}`\n**├── Extention :**  {CR} .mp3\n\n<blockquote><b>📚 Course :</b> {b_name}</blockquote>\n\n**🌟 Extracted By :** {CR}'
